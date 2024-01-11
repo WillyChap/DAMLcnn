@@ -1,18 +1,9 @@
 # DAMLcnn
 
+The most important thing to do when setting up forpy_mod is to follow this post: [CGD post](https://bb.cgd.ucar.edu/cesm/threads/compiler-flags.7980/)
 
-/glade/work/wchapman/cesm2_1_espstochCNN/components/cam/cime_config/config_component.xml ... is where that goes
+What needs to be done is an adjustment to: 
 
+CESMcaseROOT/cime/config/cesm/machines/config_compilers.xml
 
-env_build.xml goes in the case directory
-
-
-makefile goes in:  /glade/work/wchapman/cesm2_1_espstochCNN/components/cam/bld
-
-
-
-ACTUALLY THIS IS THE ONLY THING IMPORTANT:
-
-/glade/work/wchapman/cesm2_1_espstochCNN/cime/config/cesm/machines/config_compilers.xml
-
-/glade/work/wchapman/DAMLcnn/
+in the LDL flags. the config_compilers.xml file will contain that information. 
